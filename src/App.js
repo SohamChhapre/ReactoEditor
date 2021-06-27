@@ -58,11 +58,12 @@ const App=()=> {
     if(theme==1){
       const body = document.body;
       body.classList.add('dark-mode')
-
+      localStorage.setItem('theme','dark')
     }
     else{
       const body = document.body;
-      body.classList.remove('dark-mode')
+      body.classList.remove('dark-mode');
+      localStorage.setItem('theme','light');
     }
   },[theme])
 
