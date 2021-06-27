@@ -8,7 +8,7 @@ import CSSEditorDark from './components/Editors/CSSEditorDark';
 import JSEditorDark from './components/Editors/JSEditorDark';
 import { HtmlCompletions } from 'brace/mode/html';
 import './App.css';
-import run_icon from './assets/icons/run.jpg';
+import light_icon from './assets/icons/light.png';
 const App=()=> {
   const [showResult,setShowResult]=useState(false);
   const [htmlContent,setHtmlContent]=useState("");
@@ -134,13 +134,20 @@ const App=()=> {
     <div className="App">
       <nav class="navbar navbar-expand-lg navbar-light bg-light" >
         <a class="navbar-brand" href="#">ReactoEditor</a>
-        <div style={{position:"fixed",right:"20px"}}>
-        <div
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+            <div style={{}}>
+        { theme==0 && <div
         className='fa fa-moon-o'
         onClick={() => {setTheme(!theme)}}
-      >
+      ></div>}
+        {theme==1 && <img src={light_icon} height="22px" onClick={() => {setTheme(!theme)}} />}
+        
         </div>
-        </div>
+            </li>
+        </ul>
+        
     </nav>
       <div class="row mr-0">
         
