@@ -109,7 +109,7 @@ const App=()=> {
         html_css_js=html_css_js.replace('</script>', jsContent+' \n </script>');
       }
     
-    console.log(html_css_js);
+    //console.log(html_css_js);
     return html_css_js;
   }
   const downloadCode=()=> {
