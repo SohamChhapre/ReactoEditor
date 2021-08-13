@@ -11,7 +11,7 @@ const CSSEditor=({setCSSContent})=>{
     
 
     const onChange=(newValue) =>{
-        console.log('change', newValue);
+        //console.log('change', newValue);
         setCSSContent(newValue)
     }
 
