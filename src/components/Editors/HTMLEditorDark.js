@@ -14,7 +14,7 @@ const HTMLEditor=({setHtmlContent,showResult})=>{
     
 
     const onChange=(newValue) =>{
-        console.log('change', newValue);
+        //console.log('change', newValue);
         setHtmlContent(newValue);
     }
 
