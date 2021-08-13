@@ -9,7 +9,7 @@ const JSEditor=({setJSContent})=>{
     
 
     const onChange=(newValue) =>{
-        console.log('change', newValue);
+        //console.log('change', newValue);
         setJSContent(newValue);
     }
 
